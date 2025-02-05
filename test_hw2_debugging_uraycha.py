@@ -1,3 +1,4 @@
+"""This module contains the unit tests for the mergeSort function."""
 from hw2_debugging_uraycha import merge_sort
 
 def test_merge_sort():

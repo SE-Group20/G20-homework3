@@ -1,10 +1,9 @@
-from .rand import random_array
+from rand_kwilso24 import random_array
 
 
 def mergeSort(arr):
     if len(arr) <= 1:
         return arr
-    
     mid = len(arr) // 2
     left_arr = mergeSort(arr[:mid])
     right_arr = mergeSort(arr[mid:])

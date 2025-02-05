@@ -1,8 +1,12 @@
-import subprocess
+import random
 
 def random_array(arr):
-    shuffled_num = None
     for i in range(len(arr)):
-        shuffled_num = subprocess.run(["shuf", "-i1-20", "-n1"], capture_output=True)
-        arr[i] = int(shuffled_num.stdout)
+        arr[i] = i + 1  # Or any other range of numbers you want
+    random.shuffle(arr) # Shuffle the list in-place.
     return arr
+
+#Example usage:
+arr = [None]*20
+shuffled_array = random_array(arr)
+print(shuffled_array)
