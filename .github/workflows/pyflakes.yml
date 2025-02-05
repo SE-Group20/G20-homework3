@@ -1,0 +1,21 @@
+name: Pyflask Workflow
+
+on:
+  push:
+    branches: [ '*' ]         
+  pull_request:
+    branches: ['*']       
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    - run: pip install pyflakes
+    - run: pyflakes .  # Run pyflakes on all Python files in the repo
+
+
