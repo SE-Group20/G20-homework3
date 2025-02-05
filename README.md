@@ -7,7 +7,7 @@
 
 ![Pyflask Workflow](https://github.com/SE-Group20/G20-homework3/actions/workflows/pyflakes.yml/badge.svg)
 
-[![Run Radon complexity analysis](https://github.com/SE-Group20/G20-homework3/actions/workflows/radon.yaml/badge.svg)]
+![Run Radon complexity analysis](https://github.com/SE-Group20/G20-homework3/actions/workflows/radon.yaml/badge.svg)
 
 ## Group 20
 
